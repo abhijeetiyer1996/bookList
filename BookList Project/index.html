@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style>
+        .container{
+            margin-top:50px;
+        }
+        body{
+            background:#dbdbdb;
+        }
+        
+    </style>
+</head>
+<body class="ui black">
+    <div class="ui container">
+        <div class="ui placeholder inverted segment">
+            <h3 class="ui icon header ui center aligned">
+                <i class="book icon"></i>
+                <div class="content">
+                    Book List
+                </div>
+            </h3>
+        </div>
+        <div class="ui stackable grid">
+            <div class="two column row">
+                <div class="column">
+                    <div class="ui raised black segment bookContainer">
+                        <form class="ui form" id="book-form">
+                            <div class="field">
+                                <label for="title">TTILE</label>
+                                <input type="text" id="title" placeholder="Title"> 
+                            </div>
+                            <div class="field">
+                                <label for="author">AUTHOR</label>
+                                <input type="text" id="author" placeholder="Author"> 
+                            </div>
+                            <div class="field">
+                                <label for="isbn">ISBN#</label>
+                                <input type="text" id="isbn" placeholder="ISBN"> 
+                            </div>
+                            <div class="field">
+                                <input type="submit" value="SUBMIT" class="ui secondary button">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="column">
+                   <div class="ui black very padded segment">
+                    <table class="ui singleline  unstackable inverted padded table">
+                       <thead>
+                           <tr>
+                               <th>TITLE</th>
+                               <th>AUTHOR</th>
+                               <th>ISBN</th>
+                               <th></th>
+                           </tr>
+                       </thead> 
+                       <tbody class="book-list"></tbody>
+                    </table>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="appes6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+</html>
